@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            background-color: blue;
+            height: 150px;
+            width: 150px;
+            position: relative;
+            animation-name: self;
+            animation-duration: 1s;
+            animation-delay: -1s;
+            /*animation-iteration-count: 3;*/
+            animation-iteration-count: infinite;
+            border-radius: 500px;
+        }
+        @keyframes self{
+            0%{background-color: yellow; left: 0px; top: 0px;}
+            25%{background-color: pink; left: 300px; top: 0px;}
+            50%{background-color: blueviolet; left: 300px; top: 300px;}
+            75%{background-color: springgreen; left: 0px; top: 300px;}
+            100%{background-color: black; left: 0px; top: 0px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
